@@ -1,0 +1,11 @@
+@import "~constants/theme.scss";
+
+.title-bar {
+    background-color: $primary-color;
+    align-items: center;
+    height: 60px;
+
+    .logo {
+        height: 100%;
+    }
+}
