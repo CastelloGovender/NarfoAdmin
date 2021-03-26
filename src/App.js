@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import {NavBar, Menu} from 'components';
 import UnderConstruction from 'views/UnderConstruction/UnderConstruction';
+import MyProfile from 'views/MyProfile/MyProfile';
 import { Activities, Courses, Docs, Endorsements, Logout, Profile, Reminder, Sales, Status} from 'assets/svg'
 import './App.scss';
+
 export default class App extends Component {
 
   getMenuItems = () => {
@@ -10,7 +12,7 @@ export default class App extends Component {
       {
         label: "My profile",
         icon: Profile,
-        view: <UnderConstruction label="My profile"/>
+        view: <MyProfile/>
       },
       {
         label: "Sale commission",

@@ -40,7 +40,7 @@ export default class Menu extends Component {
                 <div className="menu-items col grow">
                     {this.renderMenuItems(this.props.menuItems)}
                 </div>
-                <div className="body col grow">
+                <div className="body col grow px4">
                     {this.props.menuItems[this.state.selectedMenuItemIndex].view}
                 </div>
             </div>
