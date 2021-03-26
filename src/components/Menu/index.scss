@@ -3,18 +3,30 @@
 .menu {
     
     .menu-items {
-        border: 1px solid $secondary-color;
         row-gap: 1px;
-        background-color: $secondary-color;
         max-width: 15rem;
     }
 
     .menu-item {
-        background-color: #FFF;
         min-width: 7.5rem;
+        border-radius: 10px;
+        background-color: $white-1;
+
+        &.active {
+            background-color: $primary-light-color;
+            color: $primary-color;
+
+            .image {
+                filter: invert(22%) sepia(62%) saturate(1914%) hue-rotate(235deg) brightness(90%) contrast(98%);
+            }
+        }
+
+        .image {
+            min-width: 40px;
+            filter: invert(31%) sepia(1%) saturate(531%) hue-rotate(320deg) brightness(90%) contrast(86%);
+        }
     }
 
     .body {
-        border: 1px solid $secondary-color;
     }
 }

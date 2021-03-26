@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Image from 'components/Image/Image'
 import './index.scss'
 
 export default class Menu extends Component {
@@ -21,10 +22,12 @@ export default class Menu extends Component {
     }
     
 
-    renderMenuItem = ({label}, index) => {
+    renderMenuItem = ({label, icon}, index) => {
+        const activeStyle = index===this.state.selectedMenuItemIndex ? `active` : ``
         return (
-            <div key={label} className="menu-item p4" onClick={()=>this.setState({selectedMenuItemIndex: index})}>
-                {label}
+            <div key={label} className={`menu-item row p4 pointer align-center hover ${activeStyle}`} onClick={()=>this.setState({selectedMenuItemIndex: index})}>
+                <Image class="image" src={icon}/>
+                <div>{label}</div>
             </div>
         )
     }
@@ -33,7 +36,7 @@ export default class Menu extends Component {
     
     render() {
         return (
-            <div className="menu m10 grow">
+            <div className="menu grow">
                 <div className="menu-items col grow">
                     {this.renderMenuItems(this.props.menuItems)}
                 </div>

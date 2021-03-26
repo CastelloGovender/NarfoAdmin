@@ -9,9 +9,19 @@ div {
   display: flex;
 }
 
+@font-face {
+  font-family: 'NarfoFont';
+  src: url('/assets/fonts/Metropolis-Medium.otf') format('opentype'),
+        url('/assets/fonts/Metropolis-Light.otf') format('opentype'),
+        url('/assets/fonts/Metropolis-Regular.otf') format('opentype'),
+        url('/assets/fonts/Metropolis-SemiBold.otf') format('opentype'),
+        url('/assets/fonts/Metropolis-Thin.otf') format('opentype'),
+        url('/assets/fonts/Metropolis-ExtraLight.otf') format('opentype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'NarfoFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

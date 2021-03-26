@@ -1,0 +1,48 @@
+@import "~constants/theme.scss";
+
+.nav-bar {
+    box-shadow: 0 1px 8px -4px $secondary-light-color;
+    background-color: $white-1;
+    align-items: center;
+    height: 60px;
+
+    .hamburger {
+        display: none;
+        border-radius: 100%;
+    }
+
+    .logo {
+        height: 100%;
+        max-width: 7.5rem;
+    }
+
+    .item {
+        text-transform: uppercase;
+    }
+
+    .tail {
+        max-width: 360px;
+        flex: 2;
+        column-gap: 12px;
+        background-color: $primary-color;
+        clip-path: polygon(80px 0, 100% 0, 100% 100%, 0% 100%);
+
+        .name {
+            color: $white-1;
+        }
+
+        .chevron {
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(71deg) brightness(109%) contrast(105%);
+        }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        .item {
+            display: none;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+    }
+}

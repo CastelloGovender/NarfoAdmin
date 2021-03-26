@@ -1,0 +1,7 @@
+@import "~constants/theme.scss";
+
+.hover {
+    &:hover {
+        background-color: $hover-color;
+    }
+}
