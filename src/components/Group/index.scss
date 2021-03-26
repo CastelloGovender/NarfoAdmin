@@ -1,0 +1,17 @@
+@import "~constants/theme.scss";
+
+.group {
+
+    .group-header {
+        border-bottom: 1px solid #D6D6D6;
+    }
+
+    .group-body {
+
+    }
+
+    .group-label {
+        font-size: 22px;
+        color: $primary-color;
+    }
+}

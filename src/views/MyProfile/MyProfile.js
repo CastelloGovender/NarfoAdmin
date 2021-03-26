@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {TabGroup} from 'components'
+import MyDetails from 'views/MyProfile/MyDetails/MyDetails'
 import UnderConstruction from 'views/UnderConstruction/UnderConstruction';
 
 export default class MyProfile extends Component {
@@ -8,7 +9,7 @@ export default class MyProfile extends Component {
         return [
             {
                 label: "My details",
-                view: <UnderConstruction label="My details"/>
+                view: <MyDetails/>
             },
             {
                 label: "Account details",
@@ -26,7 +27,7 @@ export default class MyProfile extends Component {
         const tabs = this.getTabs()
         return (
             <div className="my-profile col grow">
-                <div className="title mt2">{"My Profile"}</div>
+                <div className="title mt2">{"My profile"}</div>
                 <TabGroup items={tabs}/>
             </div>
         )
