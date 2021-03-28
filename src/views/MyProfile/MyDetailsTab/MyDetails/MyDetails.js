@@ -45,7 +45,7 @@ export default class MyDetails extends Component {
     renderGroups = (groups) => {
         return groups.map(group=>{
             return(
-                <Group class="answers wrap g4" key={group.label} label={group.groupName}>
+                <Group class="answers wrap g4" key={group.groupName} label={group.groupName}>
                     {this.renderAnswers(group.answers)}
                 </Group>
             )

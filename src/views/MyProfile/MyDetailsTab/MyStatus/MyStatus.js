@@ -24,7 +24,7 @@ export default class MyStatus extends Component {
 
     renderAnswers = (answers) => {
         return (
-            <div className="answers wrap g4">
+            <div className="answers grow wrap g4">
                 {answers.map(answer=><Answer key={answer.label} label={answer.label} value={answer.value} type={TYPE.INDENTED}/>)}
             </div>
         )
@@ -32,7 +32,7 @@ export default class MyStatus extends Component {
 
     renderImage = () => {
         return (
-            <div className="status-image-container grow col align-center gr4">
+            <div className="status-image-container col center gr4">
                 <div className="status-image center">
                     <Image src={Profile}/>
                 </div>
@@ -47,7 +47,7 @@ export default class MyStatus extends Component {
 
         return (
             <div className="my-status">
-                <Group label="My status" class="gc8">
+                <Group label="My status" class="my-status-group g8 wrap">
                     {this.renderImage()}
                     {this.renderAnswers(answers)}
                 </Group>

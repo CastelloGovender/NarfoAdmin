@@ -1,7 +1,16 @@
+@import "~constants/theme.scss";
 
-    .my-details {
+.my-details {
+    .answers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $breakpoint-tablet) {
         .answers {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
     }
+}

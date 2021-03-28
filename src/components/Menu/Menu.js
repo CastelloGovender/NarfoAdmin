@@ -27,7 +27,7 @@ export default class Menu extends Component {
         return (
             <div key={label} className={`menu-item row p4 pointer align-center hover ${activeStyle}`} onClick={()=>this.setState({selectedMenuItemIndex: index})}>
                 <Image className="image" src={icon}/>
-                <div>{label}</div>
+                <div className="menu-item-label">{label}</div>
             </div>
         )
     }
