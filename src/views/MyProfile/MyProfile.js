@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {TabGroup} from 'components'
-import MyDetails from 'views/MyProfile/MyDetails/MyDetails'
+import MyDetails from 'views/MyProfile/MyDetailsTab/MyDetailsTab'
 import UnderConstruction from 'views/UnderConstruction/UnderConstruction';
 
 export default class MyProfile extends Component {

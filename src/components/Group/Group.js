@@ -9,11 +9,11 @@ export default class Group extends Component {
 
     render() {
         return (
-            <div class="group col grow">
+            <div className="group col grow mt2">
                 <div className="group-header pb1">
                     <div className="group-label">{this.props.label}</div>
                 </div>
-                <div className="group-body py">
+                <div className="group-body py6">
                     {this.props.children}
                 </div>
             </div>

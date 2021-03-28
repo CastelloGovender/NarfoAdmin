@@ -1,3 +1,5 @@
+@import "~constants/theme.scss";
+
 html, body, #root, .App {
   height: 100%;
   flex: 1;
@@ -26,6 +28,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $secondary-light-color;
 }
 
 code {

@@ -43,6 +43,10 @@
   cursor: pointer;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 $sizes: 12;
 
 @mixin margin-classes {

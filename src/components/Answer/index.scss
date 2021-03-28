@@ -1,0 +1,16 @@
+@import "~constants/theme.scss";
+
+.answer {
+    gap: 6px;
+
+    .label {
+        font-size: 16px;
+    }
+    
+    .value {
+        font-size: 24px;
+        border-radius: 10px;
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
+        background-color: $white-2;
+    }
+}

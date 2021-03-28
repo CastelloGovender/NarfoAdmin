@@ -11,6 +11,8 @@
     .item {
         border-radius: 10px;
         background-color: $white-1;
+        color: $secondary-color;
+        padding-right: 5.5rem;
 
         &.active {
             background-color: $primary-color;

@@ -26,7 +26,7 @@ export default class Menu extends Component {
         const activeStyle = index===this.state.selectedMenuItemIndex ? `active` : ``
         return (
             <div key={label} className={`menu-item row p4 pointer align-center hover ${activeStyle}`} onClick={()=>this.setState({selectedMenuItemIndex: index})}>
-                <Image class="image" src={icon}/>
+                <Image className="image" src={icon}/>
                 <div>{label}</div>
             </div>
         )
@@ -40,7 +40,7 @@ export default class Menu extends Component {
                 <div className="menu-items col grow">
                     {this.renderMenuItems(this.props.menuItems)}
                 </div>
-                <div className="body col grow px4">
+                <div className="body col grow px12">
                     {this.props.menuItems[this.state.selectedMenuItemIndex].view}
                 </div>
             </div>
