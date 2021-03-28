@@ -35,7 +35,7 @@ export default class TabGroup extends Component {
     render() {
         return (
             <div className="tab-group col grow">
-                <div className="items row p1 my4 shrink">
+                <div className="items row p1 my4 shrink gr1">
                     {this.renderItems(this.props.items)}
                 </div>
                 <div className="body col grow">

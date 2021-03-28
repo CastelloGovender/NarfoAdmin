@@ -3,13 +3,12 @@
 .menu {
     
     .menu-items {
-        row-gap: 1px;
         max-width: 15rem;
     }
 
     .menu-item {
         min-width: 7.5rem;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         background-color: $white-1;
 
         &.active {
@@ -22,7 +21,7 @@
         }
 
         .image {
-            min-width: 40px;
+            min-width: 2.5rem;
             filter: invert(31%) sepia(1%) saturate(531%) hue-rotate(320deg) brightness(90%) contrast(86%);
         }
     }

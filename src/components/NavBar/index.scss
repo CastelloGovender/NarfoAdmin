@@ -4,7 +4,7 @@
     box-shadow: 0 1px 8px -4px $secondary-light-color;
     background-color: $white-1;
     align-items: center;
-    height: 68px;
+    height: 4.25rem;
 
     .hamburger {
         display: none;
@@ -21,9 +21,8 @@
     }
 
     .tail {
-        max-width: 360px;
+        max-width: 22.5rem;
         flex: 2;
-        column-gap: 12px;
         background-color: $primary-color;
         clip-path: polygon(80px 0, 100% 0, 100% 100%, 0% 100%);
 

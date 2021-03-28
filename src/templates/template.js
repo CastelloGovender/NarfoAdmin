@@ -36,7 +36,7 @@ export default class ${name} extends Component {
 
     render() {
         return (
-            <div class="${toSnake(name)}">
+            <div className="${toSnake(name)}">
                 
             </div>
         )

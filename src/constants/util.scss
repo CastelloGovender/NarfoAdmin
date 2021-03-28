@@ -79,3 +79,14 @@ $sizes: 12;
   }
 }
 @include padding-classes;
+
+@mixin gap-classes {
+  @for $i from 1 through $sizes {
+    $gap: $i * 0.25rem;
+    /* gap #{$gap} */
+    .g#{$i} {gap: $gap;}
+    .gc#{$i} {column-gap: $gap;}
+    .gr#{$i} {row-gap: $gap;}
+  }
+}
+@include gap-classes;

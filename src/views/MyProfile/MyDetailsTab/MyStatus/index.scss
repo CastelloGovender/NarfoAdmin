@@ -1,0 +1,15 @@
+
+    .my-status {
+        .status-image {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 100%;
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        
+        .answers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }

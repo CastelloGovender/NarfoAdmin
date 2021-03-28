@@ -26,7 +26,7 @@ export default class NavBar extends Component {
     
     renderTail = (name, src) => {
         return (
-            <div className="tail h100 align-center px4">
+            <div className="tail h100 align-center px4 gc3">
                 <div className="grow"></div>
                 <div className="name pl12">{name}</div>
                 <div>

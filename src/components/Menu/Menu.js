@@ -37,7 +37,7 @@ export default class Menu extends Component {
     render() {
         return (
             <div className="menu grow">
-                <div className="menu-items col grow">
+                <div className="menu-items col grow gr1">
                     {this.renderMenuItems(this.props.menuItems)}
                 </div>
                 <div className="body col grow px12">

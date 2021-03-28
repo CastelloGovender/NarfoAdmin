@@ -29,7 +29,7 @@ function createFiles(name, type) {
     fs.writeFile(`${dir}/${name}.js`, component(name), writeFileErrorHandler);
     // index.scss
     fs.writeFile(`${dir}/index.scss`, style(name), writeFileErrorHandler);
-
+    rl.close();
 }
 
 rl.question("Name ? ", function(name) {
@@ -46,7 +46,6 @@ rl.question("Name ? ", function(name) {
     })
     typeSelect.start()
 
-    // rl.close();
 });
 
 ////////////////
