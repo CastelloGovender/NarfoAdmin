@@ -6,6 +6,7 @@ import Download from './download.svg'
 import Endorsements from './endorsements.svg'
 import Logout from './logout.svg'
 import Menu from './menu.svg'
+import Print from './print.svg'
 import Profile from './profile.svg'
 import Reminder from './reminder.svg'
 import Sales from './sales.svg'
@@ -20,6 +21,7 @@ export {
     Endorsements,
     Logout,
     Menu,
+    Print,
     Profile,
     Reminder,
     Sales,

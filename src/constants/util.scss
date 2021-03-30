@@ -47,6 +47,17 @@
   flex-wrap: wrap;
 }
 
+.capitalize{
+  display: block;
+  &::first-letter {
+      text-transform: capitalize;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 $sizes: 12;
 
 @mixin margin-classes {
@@ -90,3 +101,12 @@ $sizes: 12;
   }
 }
 @include gap-classes;
+
+@mixin font-size-classes {
+  @for $i from 1 through $sizes {
+    $font-size: $i * 0.25rem;
+    /* font-size #{$font-size} */
+    .f#{$i} {gap: $font-size;}
+  }
+}
+@include font-size-classes;

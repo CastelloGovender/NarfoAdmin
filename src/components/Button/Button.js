@@ -43,7 +43,7 @@ export default class Button extends Component {
         const typeStyle = this.getTypeStyle(type)
 
         return (
-            <div className={`button center ${typeStyle} ${className}`}>
+            <div className={`button pointer center ${typeStyle} ${className}`}>
                 <Hidden show={label}>
                     <div className="button-label">{label}</div>
                 </Hidden>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './index.scss'
-import { Button } from 'components'
+import { Button, Hidden } from 'components'
 
 export const TYPE = {
     DEFAULT: 0,
@@ -10,9 +10,10 @@ export const TYPE = {
 export default class Group extends Component {
     static propTypes = {
         label: PropTypes.string,
-        class: PropTypes.string,
         button: PropTypes.shape({
             label: PropTypes.string,
+            src: PropTypes.string,
+            type: PropTypes.string,
             onClick: PropTypes.func,
         }),
         type: PropTypes.number,
@@ -30,24 +31,25 @@ export default class Group extends Component {
 
     renderButton = (button) => {
         if(button) {
-            const { label="", onClick=()=>{} } = button;
+            const { label="", src, type, onClick=()=>{} } = button;
             return (
-                <Button className={"group-button"} label={label} onClick={()=>onClick()}/>
+                <Button className={"group-button"} label={label} src={src} type={type} onClick={()=>onClick()}/>
             )
         }
     }
 
     render() {
         const typeStyle = this.getTypeStyle(this.props.type)
-        
         return (
             <div className={`group col grow mt2`}>
-                <div className="group-header pb1">
-                    <div className="group-label">{this.props.label}</div>
-                    <div className="grow"/>
-                    {this.renderButton(this.props.button)}
-                </div>
-                <div className={`group-body py6 ${typeStyle} ${this.props.class}`}>
+                <Hidden show={this.props.label}>
+                    <div className="group-header pb1">
+                        <div className={`group-label center`}>{this.props.label}</div>
+                        <div className="grow"/>
+                        {this.renderButton(this.props.button)}
+                    </div>
+                </Hidden>
+                <div className={`group-body py6 ${typeStyle} ${this.props.className}`}>
                     {this.props.children}
                 </div>
             </div>

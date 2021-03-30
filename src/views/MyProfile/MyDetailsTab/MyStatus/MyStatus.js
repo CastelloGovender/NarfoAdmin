@@ -47,7 +47,7 @@ export default class MyStatus extends Component {
 
         return (
             <div className="my-status">
-                <Group label="My status" class="my-status-group g8 wrap">
+                <Group label="My status" className="my-status-group g8 wrap">
                     {this.renderImage()}
                     {this.renderAnswers(answers)}
                 </Group>

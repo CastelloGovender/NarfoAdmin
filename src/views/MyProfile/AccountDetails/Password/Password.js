@@ -1,12 +1,12 @@
 
 
-import { Component } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './index.scss'
 
-export default class Hidden extends Component {
+export default class Password extends Component {
     static propTypes = {
-        show: PropTypes.any
+        prop: PropTypes
     }
 
     constructor(props) {
@@ -19,7 +19,11 @@ export default class Hidden extends Component {
     
 
     render() {
-        return this.props.show ? this.props.children : null
+        return (
+            <div className="password">
+                
+            </div>
+        )
     }
 }
 

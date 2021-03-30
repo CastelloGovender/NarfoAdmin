@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {TabGroup} from 'components'
 import MyDetails from 'views/MyProfile/MyDetailsTab/MyDetailsTab'
 import UnderConstruction from 'views/UnderConstruction/UnderConstruction';
+import AccountDetails from './AccountDetails/AccountDetails';
 
 export default class MyProfile extends Component {
 
@@ -13,7 +14,7 @@ export default class MyProfile extends Component {
             },
             {
                 label: "Account details",
-                view: <UnderConstruction label="Account details"/>
+                view: <AccountDetails/>
             },
             {
                 label: "Loyalty programme",

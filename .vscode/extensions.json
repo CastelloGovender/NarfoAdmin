@@ -5,6 +5,8 @@
         "nmsmith89.incrementor",
         "sainoba.px-to-rem",
         "syler.sass-indented",
-        "msjsdiag.debugger-for-chrome"
+        "msjsdiag.debugger-for-chrome",
+        "mgmcdermott.vscode-language-babel",
+        "coenraads.bracket-pair-colorizer-2"
     ]
 }
