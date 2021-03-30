@@ -43,7 +43,7 @@ export default class Group extends Component {
         return (
             <div className={`group col grow mt2`}>
                 <Hidden show={this.props.label}>
-                    <div className="group-header pb1">
+                    <div className="group-header pb2">
                         <div className={`group-label center`}>{this.props.label}</div>
                         <div className="grow"/>
                         {this.renderButton(this.props.button)}

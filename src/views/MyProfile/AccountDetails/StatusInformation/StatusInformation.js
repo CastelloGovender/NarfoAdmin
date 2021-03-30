@@ -67,7 +67,7 @@ export default class StatusInformation extends Component {
                     <div>{`Inception date: ${formatDate(statusInfo.inceptionDate)}`}</div>
                     <div>{`Expiry date: ${formatDate(statusInfo.expiryDate)}`}</div>
                     <Group type={TYPE.INDENTED}>
-                        <Group label="My Account" button={{label:"Print", src: Print}}>
+                        <Group label="My Account" button={{label:"Print", src: Print, type:"secondary"}}>
                             <Table columns={accountColumns} data={accountData}/>
                         </Group>
                     </Group>
