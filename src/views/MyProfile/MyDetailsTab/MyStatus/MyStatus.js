@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react'
-import {Group, Answer, Image} from 'components'
+import {Group, Answer, Image, Button} from 'components'
 import { Profile } from 'assets/svg'
 import { TYPE } from 'components/Answer/Answer'
 import './index.scss'
@@ -36,7 +36,7 @@ export default class MyStatus extends Component {
                 <div className="status-image center">
                     <Image src={Profile}/>
                 </div>
-                <div className="button-primary">{"Replace image"}</div>
+                <Button type="primary" label="Replace image"/>
             </div>
         )
     }

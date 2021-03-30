@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './index.scss'
+import { Button } from 'components'
 
 export const TYPE = {
     DEFAULT: 0,
@@ -31,9 +32,7 @@ export default class Group extends Component {
         if(button) {
             const { label="", onClick=()=>{} } = button;
             return (
-                <div className="group-button button-primary center" onClick={()=>onClick()}>
-                    {label}
-                </div>
+                <Button className={"group-button"} label={label} onClick={()=>onClick()}/>
             )
         }
     }
