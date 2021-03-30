@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react'
 import {Group, Answer, Image, Button} from 'components'
 import { Profile } from 'assets/svg'

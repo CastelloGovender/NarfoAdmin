@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react'
 import { Answer, Group } from 'components'
 import { TYPE } from 'components/Group/Group'

@@ -5,7 +5,6 @@ import './index.scss'
 
 export default class MembershipCardCertificate extends Component {
     
-
     render() {
         return (
             <div className="membership-card-certificate">

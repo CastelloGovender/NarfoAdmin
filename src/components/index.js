@@ -1,19 +1,21 @@
 import Answer from 'components/Answer/Answer'
+import Button from 'components/Button/Button'
+import Group from 'components/Group/Group'
+import Hidden from 'components/Hidden/Hidden'
 import Image from 'components/Image/Image'
 import Menu from 'components/Menu/Menu'
 import NavBar from 'components/NavBar/NavBar'
-import Group from 'components/Group/Group'
+import Table from 'components/Table/Table'
 import TabGroup from 'components/TabGroup/TabGroup'
-import Button from 'components/Button/Button'
-import Hidden from 'components/Hidden/Hidden'
 
 export {
     Answer,
     Button,
-    Image, 
-    Menu,
     Group,
     Hidden,
+    Image, 
+    Menu,
     NavBar,
+    Table,
     TabGroup,
 }

@@ -1,27 +1,27 @@
 @import "~constants/theme.scss";
 
-    .my-status {
-        .status-image {
-            width: 10rem;
-            height: 10rem;
-            border-radius: 100%;
-            clip-path: circle(50% at 50% 50%);
-        }
-        
+.my-status {
+    .status-image {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+        clip-path: circle(50% at 50% 50%);
+    }
+    
+    .answers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $breakpoint-tablet) {
         .answers {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
 
-        @media (max-width: $breakpoint-tablet) {
-            .answers {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-
-            .my-status-group {
-                flex-direction: column;
-            }
+        .my-status-group {
+            flex-direction: column;
         }
     }
+}

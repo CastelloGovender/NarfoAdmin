@@ -1,0 +1,16 @@
+@import "~constants/theme.scss";
+
+.table {
+    display: grid;
+
+    .cell {
+        &.header {
+            
+        }
+
+        &.data {
+            color: $table-data-label-color;
+            background-color: $table-data-background-color;
+        }
+    }
+}

@@ -14,9 +14,7 @@ function toSnake (string) {
     .replace(/\s+/g, '-')
   }
 
-exports.component = name => `
-
-import React, { Component } from 'react'
+exports.component = name => `import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './index.scss'
 
@@ -45,8 +43,6 @@ export default class ${name} extends Component {
 
 `;
 
-exports.style = name => `
-    .${toSnake(name)} {
-        
+exports.style = name => `.${toSnake(name)} {
     }
 `
